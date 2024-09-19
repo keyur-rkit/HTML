@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- desception of website -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Demo Online Bookstore Website">
+    <meta name="keywords" content="HTML, online bookstore, demo">
+    <meta name="author" content="Keyur Saradva">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <!-- home page -->
+    <div id="home">
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#aboutUs">About us</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- about us page -->
+    <div id="aboutUs">
+        <h2>About Us</h2>
+        <p>We offer a wide range of books for all your needs. Shop with us and experience the best deals and customer
+            service!</p>
+    </div>
+
+    <div id="books">
+        <h2>Our Books</h2>
+        <div class="container">
+            <!-- books page -->
+            <div class="book">
+                <h3>Atomic Habits by James Clear</h3>
+                <img src="images\atomichabits.jpg" alt="Atomic Habits Image" width="135" height="200">
+                <p>Price: 450.00 inr</p>
+                <form action="addToCart.html" method="get">
+                    <input type="checkbox" id="checkboxLike1" name="like" value="true">
+                    <lable for="checkboxLike1">&#10084</lable>
+                    <input type="hidden" name="book" value="atomichabits">
+                    <input type="submit" value="Add to Cart">
+                </form>
+            </div>
+    
+            <div class="book">
+                <h3>IKIGAI by Francesc Miralles</h3>
+                <img src="images\ikigai.jpg" alt="IKIGAI Image" width="135" height="200">
+                <p>Price: 310.00 inr</p>
+                <form action="addToCart.html" method="get" target="_blank">
+                    <input type="checkbox" id="checkboxLike2" name="like" value="true">
+                    <lable for="checkboxLike2">&#10084</lable>
+                    <input type="hidden" name="book" value="ikigai">
+                    <input type="submit" value="Add to Cart">
+                </form>
+            </div>
+    
+            <div class="book">
+                <h3>Rich Dad Poor Dad by Robert T. Kiyosaki</h3>
+                <img src="images\richdadpoordad.jpg" alt="Rich Dad Poor Dad Image" width="135" height="200">
+                <p>Price: 341.00 inr</p>
+                <form action="addToCart.html" method="get">
+                    <input type="checkbox" id="checkboxLike3" name="like" value="true">
+                    <lable for="checkboxLike3">&#10084</lable>
+                    <input type="hidden" name="book" value="richdadpoordad">
+                    <input type="submit" value="Add to Cart">
+                </form>
+            </div>
+    
+            <div class="book">
+                <h3>One Piece 05 by Eiichiro Oda</h3>
+                <img src="images\onepiece05.jpg" alt="One Piece 05 Image" width="135" height="200">
+                <p>Price: 399.00 inr</p>
+                <form action="addToCart.html" method="get">
+                    <input type="checkbox" id="checkboxLike4" name="like" value="true">
+                    <lable for="checkboxLike4">&#10084</lable>
+                    <input type="hidden" name="book" value="onepiece05">
+                    <input type="submit" value="Add to Cart">
+                </form>
+            </div>
+    
+        </div>
+    </div>
+
+
+    <!-- contact page -->
+    <div id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit.html" method="post" novalidate>
+            <label for="txtName">Name:</label>
+            <input type="text" id="txtName" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="textareaMessage">Message:</label>
+            <textarea id="textareaMessage" name="message" rows="5" cols="30"></textarea>
+            <br>
+            <label for="file" class="labelForFile">Attach file : </label>
+            <input type="file" id="file" name="file" multiple />
+            <br>
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </div>
+
+    <div id="location">
+        <h2>Location :</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d70331.12380091936!2d70.81696885720316!3d22.80358316285645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39598cd96ce15487%3A0x294863999340c94e!2sMorbi%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1726053775539!5m2!1sen!2sin"
+            width="600" height="450"></iframe>
+    </div>
+
+</body>
+
+</html>
