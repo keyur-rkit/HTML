@@ -9,7 +9,6 @@
     <meta name="author" content="Keyur Saradva">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Bookstore</title>
-    <link rel="stylesheet" href="style1.css">
 </head>
 
 <body>
@@ -28,6 +27,13 @@
         <h2>About Us</h2>
         <p>We offer a wide range of books for all your needs. Shop with us and experience the best deals and customer
             service!</p>
+        <h3>Books we provide :</h3>
+        <ol type="I">
+            <li>Atomic Habits</li>
+            <li>IKIGAI</li>
+            <li>Rich Dad Poor Dad</li>
+            <li>One Piece 05</li>
+        </ol>
     </div>
 
     <div id="books">
@@ -98,6 +104,11 @@
             <br>
             <label for="textareaMessage">Message:</label>
             <textarea id="textareaMessage" name="message" rows="5" cols="30"></textarea>
+            <br>
+            <input type="radio" id="radioBtnMale" name="gender" value="male" />
+            <label for="radioBtnMale">male</label>
+            <input type="radio" id="radioBtnFemale" name="gender" value="female" />
+            <label for="radioBtnFemale">female</label>
             <br>
             <label for="file" class="labelForFile">Attach file : </label>
             <input type="file" id="file" name="file" multiple />
